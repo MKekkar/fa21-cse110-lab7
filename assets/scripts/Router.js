@@ -72,7 +72,7 @@ export class Router {
     }
     let hash;
     if (page === 'home') {
-      hash = '';
+      hash = '/';
     } else {
       hash = `#${page}`;
     }
