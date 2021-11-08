@@ -207,10 +207,6 @@ function bindPopstate() {
    */
   window.addEventListener('popstate', e => {
     const state = e['state'];
-    if (state) {
-      router.navigate(state, true);
-    } else {
-      router.navigate('home', true);
-    }
+    router.navigate(state ? state : 'home', true);
   });
 }
